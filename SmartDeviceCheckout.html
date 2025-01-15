@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Voltax - Checkout</title>
+  <meta name="title" content="Voltax - Book Your Eco-Friendly Ride">
+  <meta name="description" content="This is a ev charging website">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+   
+
+  <!-- 
+    - custom font link
+  -->
+  <link rel="stylesheet" href="./assets/font/font.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/loading.svg">
+  <link rel="preload" as="image" href="./assets/images/loading-circle.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+    <link rel="stylesheet" href="checkout.css">
+	
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class=" preload-box" data-preloader>
+    <img src="./assets/images/loading.svg" width="45" height="45" alt="loading">
+
+    <img src="./assets/images/loading-circle.svg" width="75" height="75" alt="loading" class="preload-circle">
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <!-- <img src="./assets/images/a.svg" width="160" height="50" alt="volti home"> -->
+        <h1 style="color:black;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">VOLTAX</h1>
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Gallery</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">About Us</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Contact Us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="header-action">
+
+        <a href="tel:+12312345678901" class="contact-number">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">+(91) 9663856962</span>
+        </a>
+
+        <a href="#" class="btn btn-primary">
+          <span class="span">Get a quote</span>
+
+          <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+        </a>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="open"></ion-icon>
+        <ion-icon name="close-outline" aria-hidden="true" class="close"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+      <div class="containers">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">CHECKOUT</span>
+
+                <form action="checkout.php" method="POST" >
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter Full Name" name="cname" required>
+                       <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter City" name="ccity" required>
+                        <i class="uil uil-map-marker"></i>
+                    </div>
+					    <div class="input-field">
+					   <i class="uil uil-label-alt"></i>
+					 <select id="state" style="margin-left:35px;height:30px" name="cstate">
+					              <option>Select State</option>
+								  <option value="Andhra Pradesh">Andhra Pradesh</option>
+								  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+								  <option value="Assam">Assam</option>
+								  <option value="Bihar">Bihar</option>
+								  <option value="Chhattisgarh">Chhattisgarh</option>
+								  <option value="saab">Goa</option>
+								  <option value="Goa">Gujarat</option>
+								  <option value="Haryana">Haryana</option>
+								  <option value="Himachal Pradesh">Himachal Pradesh</option>
+								  <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+								  <option value="Jharkhand">Jharkhand</option>
+								  <option value="Karnataka">Karnataka</option>
+								  <option value="Kerala">Kerala</option>
+								  <option value="Madhya Pradesh">Madhya Pradesh</option>
+								  <option value="Maharashtra">Maharashtra</option>
+								  <option value="Manipur">Manipur</option>
+								  <option value="Meghalaya">Meghalaya</option>
+								  <option value="Mizoram">Mizoram</option>
+								  <option value="Nagaland">Nagaland</option>
+								  <option value="Odisha">Odisha</option>
+								  <option value="Punjab">Punjab</option>
+								  <option value="Rajasthan">Rajasthan</option>
+								  <option value="Sikkim">Sikkim</option>
+								  <option value="Tamil Nadu">Tamil Nadu</option>
+								  <option value="Telangana">Telangana</option>
+								  <option value="Tripura">Tripura</option>
+								  <option value="Uttar Pradesh">Uttar Pradesh</option>
+								  <option value="Uttarakhand">Uttarakhand</option>
+								  <option value="West Bengal">West Bengal</option>
+								  
+								</select>
+                    </div>
+					
+					
+					<div class="input-field">
+                        <input type="text" placeholder=" Enter Address" name="caddress" required> 
+						<i class="uil uil-estate"></i>
+                    </div>
+					<div class="input-field">
+                        <input type="text" placeholder=" Enter Pincode" name="cpincode" maxlength="6"title="Only numbers ex:581304" required>
+						<i class="uil uil-map-pin-alt"></i>
+                    </div>
+					<div class="input-field">
+                        <input type="text" placeholder=" Enter Mobile Number" name="cmobile" pattern="[6-9]{1}[0-9]{9}" maxlength="10" title="Only numbers ex:9986697114"  required>
+						<i class="uil uil-mobile-android-alt"></i>
+                    </div>
+					<div class="input-field">
+                        <input type="text" value="Total Amount : Rs 29,999" name="tamount" required readonly> 
+						<i class="uil uil-bill"></i>
+                    </div>
+					
+                    <div class="input-field button">
+                        <input type="submit" name="btnsubmit" value="Proceed to payment" >
+                    </div>
+                </form>
+            </div>
+
+            
+        </div>
+    </div>
+
+     <script>
+       document.getElementById('todayDate').valueAsDate = new Date();
+     </script>
+
+
+   
+
+      
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
